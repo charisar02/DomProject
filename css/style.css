@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    
+}
+
+img {
+    width: 100px;
+    /* max-width: fit-content; */
+}

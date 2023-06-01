@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Shopping Cart</a>
+            <div class="navbar navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"></li>
+                </ul>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"></li>
+                </ul>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"></li>
+                </ul>
+                <span class="navbar-text">Total shopping cart value $<span class="totalAmount">0</span>  </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="card mx-auto mt-5" style="width: 40rem;">
+            <div class="card-header">
+                Cart
+            </div>
+            <div class="card-body">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th class="text-center">Quatity</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-light">
+                        <tr>
+                            <td>1</td>
+                            <td><img src="img/tShirt.jpg" alt=""> T-Shirt</td>
+                            <td>
+                                $<span class="price">700</span>
+                                <input type="hidden" name="txtPrice" value="700">
+                                <input type="hidden" name="totalTxtPrice" value="0">
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-cart-dash "></i>&nbsp;<input name="item" value="0" size="2">&nbsp;</input><i class="bi bi-cart-plus-fill text-primary"></i>
+                                <input type="hidden" name="txtItem" value="0">
+                                <!-- <input type="hidden" name="txtItemCount"> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="img/jean.jpg" alt=""> Jean</td>
+                            <td >
+                                $<span class="price">800</span>
+                                <input type="hidden" name="txtPrice" value="800">
+                                <input type="hidden" name="totalTxtPrice" value="0">
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-cart-dash"></i>&nbsp;<input name="item" value="0" size="2">&nbsp;</input><i class="bi bi-cart-plus-fill text-primary"></i>
+                                <input type="hidden" name="txtItem" value="0">
+                                <!-- <input type="hidden" name="txtItemCount"> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="img/shoe.jpeg" alt=""> Shoe</td>
+                            <td >
+                                $<span class="price">500</span>
+                                <input type="hidden" name="txtPrice" value="500">
+                                <input type="hidden" name="totalTxtPrice" value="0">
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-cart-dash"></i>&nbsp;<input name="item" value="0" size="2">&nbsp;</input><i class="bi bi-cart-plus-fill text-primary"></i>
+                                <input type="hidden" name="txtItem" value="0">
+                                <!-- <input type="hidden" name="txtItemCount"> -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-end">Total Amount : </td>
+                            <td>$<span class="totalAmount">0</span></td>
+                            <td>Total Quantity : <span class="totalQuantity">0</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
